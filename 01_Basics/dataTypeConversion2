@@ -1,0 +1,31 @@
+
+//unary 
+/*
+  let x = 9;
+  let y = -x;
+ */
+//Basic MAth Operation + - / * ** %
+
+//Postfix //Prefix
+// ++ --
+
+
+//Most Useful is String concatenation using +
+//only + can be used with string 
+//Other operators ...First convert there string which is operand here , into number , and then perform operation on the number 
+
+//Other useful thing is 
+
+//Numeric Conversion using +
+
+let x = 5
+console.log( +x)
+//console.log(x+)
+console.log( +5)
+console.log(+true)
+console.log(+" ")
+console.log(+"999")
+console.log( "5" + "9")
+console.log( +"5" + +"9" )
+console.log(Number("5") + Number("9"))
+console.log( +"true" + +"9" )
