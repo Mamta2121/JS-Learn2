@@ -5,6 +5,7 @@
 
 //declaring symbol
 
+/*
 const mySym = Symbol("key1")
 
 
@@ -27,6 +28,7 @@ const jsUser = {
 console.log(jsUser.email)  //using dot //not a good way
 console.log(jsUser["email"]) //using square bracket
 console.log(jsUser["full name"])
+jsUser["like"] = true
 console.log(typeof jsUser["mySym"]) //it is still a string not symbol
 console.log(typeof jsUser[mySym])
 
@@ -63,3 +65,20 @@ console.log(jsUser.greeting2())
 
 
 //zyda ter hm . se object se access krta hai,,, but kabhi kabhi hume [] use krna he pdta hai
+*/
+
+
+
+let a = { name: "mamta"}
+//let b = {surname: "rajera"}
+//let c = {name: "mamtarajera"}
+
+let d = Object.assign({},a)
+
+console.log(a)
+
+console.log(a == d)
+//console.log(b)
+//console.log(c)
+console.log(d)
+
