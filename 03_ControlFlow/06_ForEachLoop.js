@@ -65,3 +65,7 @@ myCoding.forEach( (item)=> {
       console.log(item.languageFileName)
 })
 
+
+
+const myNums = [1,2,3,4,5,6,]
+
