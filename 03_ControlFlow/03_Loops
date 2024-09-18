@@ -1,0 +1,10 @@
+//for loop 
+//break continue
+
+//while loop
+
+//do while
+
+for(let i = 0 ; i< 10; ++i){
+
+}
