@@ -81,7 +81,7 @@ console.log(calculateCartPrice(100,200,200,500))
 */
 
 
-
+/*
 //passing object to function
 const user = {
     username: "mamta",
@@ -107,3 +107,103 @@ function returnSecondValue(getArray)
 }
 
 returnSecondValue(myArray)
+*/
+
+
+/*
+//ways to declare function
+//#1 way using function declaration => name is mandatory 
+function func1(){
+    console.log("Func1")
+}
+
+//#2 way using function expression => with a name
+let func2 = function func(){
+    console.log("Function Expression")
+}
+
+
+//#2 way using function expression => without a name
+let func3 = function(){
+    console.log("FE")
+}
+
+func1()
+console.log(func1)
+
+
+ //func()//error
+ //console.log(func) //error
+ 
+ 
+func2()
+console.log(func2)
+func3() 
+console.log(func3)
+*/
+
+
+/*
+//copy
+let func4 = func1;
+func4()
+console.log(func4 == func1)  //same refernce
+
+//provided different refernce
+func4 = function(){
+    console.log("Func4")
+}
+
+func4()
+console.log(func4 == func1) //false //no more same
+
+*/
+
+
+
+/*
+//function hoisting 
+//#function declaration
+
+func1()
+function func1() 
+{
+    console.log("FD")
+}
+
+//#function expression
+
+func2()
+let func2 = function(){
+    console.log("FE")
+}
+
+func1();
+func2();
+*/
+
+
+//Function Closure and Nested Function
+
+function func1() 
+{
+    let x1 = 90
+    let y = 20
+
+    function func2()
+    {
+        let x2 = 100
+        y = 100
+        x1 = 100
+        console.log(x1) //allowed
+    }
+
+    func2()
+    console.log(y)
+    //console.log(x2) //not allowed
+}
+
+
+func1()
+
+//func2() //error //calling out of the scope
