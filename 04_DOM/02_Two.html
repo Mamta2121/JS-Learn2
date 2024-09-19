@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Create and Add New Elements</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+      <div class = "parent">
+           <div class="day">Monday</div>
+           <div class="day">Tuesday</div>
+           <div class="day">Wednesday</div>
+           <div class="day">Thursday</div>
+           <div class="day">Saturday</div>    
+      </div>
+</body>
+<script>
+   const parent = document.querySelector('.parent')
+   console.log(parent)
+   console.log(parent.children) //html collection
+   console.log(parent.children[0].innerHTML)
+
+   for(let i = 0 ; i < parent.children.length; ++i)
+   {
+        console.log(parent.children[i].innerHTML)
+   }
+
+
+   //moving from parent to child
+   console.log(parent.firstElementChild) //imp property
+   console.log(parent.lastElementChild) 
+
+   const dayOne = document.querySelector( '.day')
+   console.log(dayOne);
+   console.log(dayOne.parentElement) //child to parent
+   console.log(dayOne.nextElementSibling);
+
+   console.log("NODES: ", parent.childNodes) //imp //nodeList
+</script>
+</html>

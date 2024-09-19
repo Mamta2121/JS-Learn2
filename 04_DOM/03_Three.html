@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    
+</body>
+
+<script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main"
+        div.id = Math.round(Math.random() * 10 + 1)
+        div.setAttribute("title", "generated title")
+        div.style.backgroundColor = "green"
+        div.style.padding = "12px"
+        //div.innerText = "JS LEARNING CONTINUED"  //div me text add kr diya innerHTML pehle jo text vha already hai usko lekr aata hai then usko overwrite krta hai
+        const addText = document.createTextNode("JS LEARNING CONTINUED ") //this is more optimised way to add text into a tag
+        div.appendChild(addText)
+
+        document.body.appendChild(div)
+</script>
+</html>
