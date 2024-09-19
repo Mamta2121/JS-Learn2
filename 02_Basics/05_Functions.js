@@ -183,6 +183,7 @@ func2();
 */
 
 
+/*
 //Function Closure and Nested Function
 
 function func1() 
@@ -207,3 +208,33 @@ function func1()
 func1()
 
 //func2() //error //calling out of the scope
+*/
+
+
+
+
+//default parameter
+/*
+function func1(a,b=1)
+{
+    return [a,b]
+}
+console.log(func1(1,2));
+console.log(func1(1))
+console.log(func1())
+console.log(func1(undefined))
+console.log(func1(2,undefined))
+*/
+
+
+//spread operator to make rest parameters
+function func1(a, ...b)
+{
+    console.log(a);
+    console.log(b, b.length);
+}
+
+func1()
+func1(1)
+func1(1,2)
+func1(1,2,3,4,5,6,6,7,8)
