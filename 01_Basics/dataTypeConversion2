@@ -17,7 +17,9 @@
 //Other useful thing is 
 
 //Numeric Conversion using +
-
+--->The unary + operator tries to convert its operand into a number. If the operand is not a valid number, the result is NaN.
+--->The unary + operator is a quick way to convert values into numbers.
+--->Use Number() explicitly when readability is important.
 let x = 5
 console.log( +x)
 //console.log(x+)
