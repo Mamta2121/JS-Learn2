@@ -68,7 +68,11 @@ console.log(Math.max())
 
 
 //IMP
-const max = 10;
-const min = 20;
+const min = 10;
+const max = 20;
 
 console.log(Math.floor(Math.random()*(max-min+1)+min) )
+ /* ---> Math.random() provides a base random number in [0, 1).
+Scaling it with (max - min + 1) adjusts the size of the range.
+Adding min ensures the range starts at the desired min value.
+Using Math.floor() ensures the result is an integer.*/
