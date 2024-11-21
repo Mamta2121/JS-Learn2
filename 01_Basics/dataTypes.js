@@ -1,3 +1,17 @@
+/*
+---->
+Primitive Data Types in JavaScript
+JavaScript has 7 primitive data types:
+
+Number: Represents numeric values, including special values like Infinity, -Infinity, and NaN.
+BigInt: For representing numbers larger than 2^53 - 1.
+String: Represents textual data enclosed in quotes (' ', " ", or ` `).
+Boolean: Represents true or false.
+Null: Represents an explicit absence of a value.
+Undefined: Represents a variable declared but not assigned any value.
+Symbol: Used for creating unique identifiers.
+*/
+
 "use strict"; //treat all JS code as newer version
 
 //alert(3+3) //this is available to use in BROWSER, But not here in NODEjs Enviroment, Basically here it has a different syntax
@@ -7,25 +21,11 @@ let x = "mamta";
 let y = 80;
 let isLoggedIn = false;
 
-
-//Primitive data type
-// number => 2 to power 53(range)
-// bitint => Very Very Big Number => something bigger than number range=>Stock Marketing , trading
-//string => ""
-//boolean => true/false;
-//null => standalone value => ( representation of EMPTY VALUE)
-//undefined => No value assigned
-//symbol => Mostly used in REACT => UNiqueness=> to identify components uniquely
-
-
-//object
-
-
 /*
 console.log(typeof "hitesh")
 console.log(typeof y)
 
-console.log(typeof null)
+console.log(typeof null) Although null is a primitive, typeof null returns "object".
 
 console.log(typeof undefined)
 
