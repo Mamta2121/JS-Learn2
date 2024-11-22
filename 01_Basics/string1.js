@@ -11,29 +11,40 @@ console.log(name + repoCount + "Value")
 
 console.log(`My name is ${name} and my repocount is ${repoCount}`)
 
+//With backticks, strings can span multiple lines easily without special characters.
+
 let infoOne = `My
         Name
         is
         Mamta`;
 
+// double quotes (") do not support multiline strings without escaping newlines (\n).
         /*
-let infoTwo = "My
+let infoTwo = "My //error
        name
        is 
        mamta" 
        */
 
        /*
-       //1st way of making string
+       
+//Literal Strings->1st way of making string
 let str1 =  "my name is mamta"
 console.log(str1.length) 
 
-       //2nd way of making string
+//String Objects->2nd way of making string
 let str2 = new String("my name is mamta")
 console.log(str2.length)
 
-console.log(typeof str1)
-console.log(typeof str2)
+console.log(typeof str1) //string
+console.log(typeof str2) //object
+*/
+
+/*Strings in JavaScript are immutable,
+meaning their individual characters cannot be changed after the string is created.
+Assigning a new value to str3 works because it replaces the entire string, 
+not just a part of it:
+
 */
 
 
