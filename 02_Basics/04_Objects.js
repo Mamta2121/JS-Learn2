@@ -29,7 +29,8 @@ const obj2 = {3: "a", 4: "b"}
 
 //console.log(obj3)
 
-
+// ->Copies properties from one or more source objects to a target object.
+   ->The first argument is the target object, which will be mutated.
 /* here first argument is target object isme changes hote hai or vhi return hota hai
 const obj3 = Object.assign(obj1,obj2) //yha pe obj1 me obj2 copy hua. mtlb obj1 me changes hue
 console.log(obj3)
@@ -64,10 +65,10 @@ console.log(tinderUser)
 
 
 //kisi object ki saari keys chiye
-console.log(Object.keys(tinderUser))  //return an array
+console.log(Object.keys(tinderUser))  //returns an array of an object's keys
 
 //kisi object ki saari values chiye
-console.log(Object.values(tinderUser))
+console.log(Object.values(tinderUser))  //returns an array of an object's values
 
 
 //check krna hai ki kya object pass koe property hai a nhi
@@ -103,11 +104,7 @@ const {courseInstructor: instructor} = course //ab courseInstructor ka bhi name 
 console.log(instructor)   //ab courseInstructor bhi likhe ki need ni 
 
 
-const navbar = () => {
-
-}
 
 
-
-//API, JSON
+//API, JSON ->When working with APIs, data is often received as JSON (JavaScript Object Notation). JSON data is typically an array of objects.
 
