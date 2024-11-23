@@ -1,3 +1,6 @@
+
+++++++++++++++++++++++++++++++++++++++++++++What is function?++++++++++++++++++++++++++++++++++++++++++++++++++++
+    A function in JavaScript is a block of reusable code designed to perform a specific task.
 /*
 console.log("M")
 console.log("A")
@@ -18,6 +21,9 @@ console.log("A")
 sayMyName()// -> Execution of function
 */
 
++++++++++++++++++++++++++++++++++++++++++Parameters and Arguments+++++++++++++++++++++++++++++++++++++++++++++++++
+    ->Parameters are the placeholders in the function definition.
+    ->Arguments are the actual values passed during function calls.
 /*
 function addTwoNumbers(number1, number2)   // definition me PARAMETERS
 {
@@ -43,8 +49,10 @@ function addTwoNumbers(number1, number2)   // definition me PARAMETERS
 let result = addTwoNumbers(3,5)
 console.log(result)
 
++++++++++++++++++++++++++++++++Default Parameters++++++++++++++++++++++++++++++++++++++  
+
 function loginUserMessage(username = "Sam"){ //providing a default value in case no value is provided .....so it never goes into if statement
-    if(!undefined)
+    if(!username)
     {
         console.log("Please enter a username")
         return
@@ -56,25 +64,23 @@ console.log(loginUserMessage("mamta"))
 console.log(loginUserMessage()) //no arg passed 
 */
 
-
++++++++++++++++++++++++++++++++++++++Spread Operator++++++++++++++++++++++++++++++++++++++++++++
+    If the number of arguments is unknown, the rest operator (...) can be used to gather all arguments into an array.
 //When No of Arguments is not known => Example : making a shoping kart
-
-
-//if no of argument is fixed we can make parameters for them like this
+//if number of argument is fixed we can make parameters for them like this
 /*
 function calculateCartPrice(num1){
     return num1
 }
 
 console.log(calculateCartPrice(8))
-*/
 
 //using REST OPERATOR........Takes multiple values
-// ... operator => this is spread operator
-/*
+// ...variablename => this is spread operator
+
 function calculateCartPrice(...num1)
 {
-    return num1  //converts into aray
+    return num1  //converts into array
 }
 
 console.log(calculateCartPrice(100,200,200,500))
@@ -111,19 +117,19 @@ returnSecondValue(myArray)
 
 
 /*
-//ways to declare function
-//#1 way using function declaration => name is mandatory 
+//Ways to declare function
+//#1 way using function declaration => name is mandatory  -> HOISTED
 function func1(){
     console.log("Func1")
 }
 
-//#2 way using function expression => with a name
+//#2 way using function expression => with a name -> NOT HOISTED
 let func2 = function func(){
     console.log("Function Expression")
 }
 
 
-//#2 way using function expression => without a name
+//3 way using function expression => without a name -> Anonymous function
 let func3 = function(){
     console.log("FE")
 }
@@ -147,7 +153,7 @@ console.log(func3)
 //copy
 let func4 = func1;
 func4()
-console.log(func4 == func1)  //same refernce
+console.log(func4 == func1)  //same reference
 
 //provided different refernce
 func4 = function(){
@@ -163,17 +169,17 @@ console.log(func4 == func1) //false //no more same
 
 /*
 //function hoisting 
-//#function declaration
+//#function declaration -> Hosted
 
-func1()
+func1() //no error
 function func1() 
 {
     console.log("FD")
 }
 
-//#function expression
+//#function expression -> Not Hoisted
 
-func2()
+func2() //error
 let func2 = function(){
     console.log("FE")
 }
