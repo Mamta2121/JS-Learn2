@@ -1,11 +1,23 @@
 //ES6 -> arrow function
-/*
+
+//In Global Scope 
+-> In a programming environment, the global scope is the scope that contains, and is visible in, all other scopes.
+->In JavaScript, the global scope is associated with a global object:
+    ---->In browsers, the global object is window.
+    ---->In Node.js, the global object is global.
+console.log(this);
+
+
+//In Method
+-> Function declared as property of an object is called method
+-> Inside a method -> "this" refers to the object that the method is attached to, thus allowing the same method to be reused on different objects.
+/*  
 const user = {
     username: " mamta",
     price: 999,
 
-    welcomeMessage: function(){
-       // console.log( `${username} , welcome to website`)
+    welcomeMessage: function(){                                  
+       //console.log( `${username} , welcome to website`)
        //console.log( `${user.username} , welcome to website`)
        console.log( `${this.username} , welcome to website`)
         console.log(this)
@@ -17,33 +29,49 @@ user.username = "sam"
 
 user.welcomeMessage()
 
-console.log(this)  //In node enviroment , it is empty object //in console this refers to the Gloabal object WINDOW
 */
 
 
+//Inside Function
+->this will be undefined — but only if the function is in strict mode.
+->In non-strict mode, a special process called this substitution ensures that the value of this is always an object. This means:
+  -----> If a function is called with this set to undefined or null, this gets substituted with globalThis->which is usually akin to the global object.
 /*
-//this when used inside a function
-
 function chai(){
     let username = "hitesh"
-    console.log(this.undefined)  //inside a function, this work differnetly then inside a object
-    console.log(this)   //this inside function returns a non-empty object
+    console.log(this.undefined)  
+    console.log(this)   
 }
 
 chai();
-
-
 */
 
+//Inside Arrow Function
+->In arrow functions, this retains the value of the enclosing lexical context's this.
+->Arrow Functions Do Not Bind Their Own this:
+  ---->Unlike regular functions, arrow functions do not have their own this.
+  ---->Instead, the value of this inside an arrow function is inherited from its surrounding lexical scope at the time of definition (the enclosing function, block, or global scope).
 /*
-//Arrow Fucntion -> this can be used inside arrow function
-const chai = () => {
-    let username = "hitesh"
-    console.log(this)   //return a empty object
-    console.log(this.username)
-}
+const obj = {
+    name: "Mamta",
+    regularFunc: function () {
+        console.log(this.name); // "Mamta"
+    },
+    arrowFunc: () => {
+        console.log(this.name); // `this` inherits from the outer scope 
+    },
+};
 
-chai()
+//Arrow Function inside a method
+const obj2 = {
+    name: "Mamta",
+    greet: function () {
+        const arrowFunc = () => {
+            console.log(this.name); // "Mamta"
+        };
+        arrowFunc();
+    },
+};
 */
 
 //declaring a arrow function
