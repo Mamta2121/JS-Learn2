@@ -46,15 +46,16 @@ if((Object.keys(userInfo)).length === 0)
 
 
 
-// Nullish Coalescing Operator (??): null and defined
+// Nullish Coalescing Operator (??):   returns the first non-null or non-undefined value.
 
-let val1 = 5 ?? 10   //first non null value gest assigned
+let val1 = 5 ?? 10   //first non null value gets assigned
 let val2 = null ?? 10
 let val3 = undefined ?? 15
 console.log(val1);   //5
 console.log(val2);   //10
 console.log(val3);  //15
 
+//Both operands are nullish->Since ?? can’t find a valid value, it defaults to returning the last evaluated value in the chain.
 let val4 = null ?? undefined
 let val5 = undefined ?? null
 
