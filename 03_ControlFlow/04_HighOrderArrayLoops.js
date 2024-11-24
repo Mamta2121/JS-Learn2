@@ -1,3 +1,11 @@
+/*
+for...of: Iterates over values of arrays, strings, maps, set and other iterables (best for working with values).
+for...in: Iterates over keys (or indices) of objects and arrays (best for objects or accessing properties).
+forEach(): Iterates over values of arrays (best for performing side-effects on each element, but can't exit early).
+*/
+
+
+
 //array object specific loops
 //1. for of
 
