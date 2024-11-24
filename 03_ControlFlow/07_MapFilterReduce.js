@@ -1,3 +1,28 @@
+//1 map()
+/*
+Purpose: Creates a new array by transforming each element in the original array using a callback function.
+Does not modify the original array.
+Often used for transforming data (e.g., applying a calculation or changing the structure of objects).
+const newArray = array.map(callbackFunction);
+*/
+
+//2 filter()
+/*
+Purpose: Creates a new array containing only the elements that satisfy the given condition in the callback function.
+Does not modify the original array.
+Often used for selecting subsets of data.
+const filteredArray = array.filter(callbackFunction);
+*/
+
+//3 reduce()
+/*
+Purpose: Reduces the array to a single value by applying a callback function repeatedly to each element (along with an accumulator).
+Often used for aggregating data (e.g., summing values, finding products, etc.).
+Does not modify the original array
+const result = array.reduce((accumulator, currentValue) => {
+  // Return updated accumulator
+}, initialValue);
+*/
 //filter method => ((paramter) => condition)
 /*
 const myNums = [1,2,3,4,5,6,7,8,9,10]
